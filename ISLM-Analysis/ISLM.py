@@ -60,7 +60,7 @@ if __name__ == "__main__":
     ax.legend()
     ax.grid(True)
     ax.set_xlim(left=0, right=5000)
-    ax.set_ylim(bottom=0, top=100)
+    ax.set_ylim(bottom=-1, top=20)
     st.pyplot(fig)
     st.markdown(f"**Equilibrium Income Y\*** = {Y_eq:.2f},  **Equilibrium Interest Rate r\*** = {r_eq:.3f}")
 
