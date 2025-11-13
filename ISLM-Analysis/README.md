@@ -18,9 +18,13 @@ This Python script implements an interactive IS–LM macroeconomic model using *
   - Taxes (T)
 
 ## Usage
-Run the script with Streamlit:
+
+Run the IS–LM app online:
+
+[Open the IS–LM Model on Streamlit](https://share.streamlit.io/ユーザ名/リポジトリ名/ブランチ名/ISLM%20Analysis/ISLM.py)
+
+Or run locally:
+
 ```bash
-**streamlit run "ISLM Analysis/ISLM.py"**
-or
-**cd "ISLM Analysis"
-streamlit run ISLM.py**
+cd "ISLM Analysis"
+streamlit run ISLM.py
