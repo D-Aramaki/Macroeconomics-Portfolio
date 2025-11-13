@@ -51,7 +51,7 @@ if __name__ == "__main__":
     Y_eq, r_eq = find_equilibrium(alpha, C0, I0, b, G, M, k, h, P, T)
 
     fig, ax = plt.subplots(figsize=(7,5))
-    ax.plot(Y_IS, r_IS, color="red", label="IS curve")
+    ax.plot(Y_IS, r_IS, color="black", label="IS curve")
     ax.plot(Y_LM, r_LM, color="blue", label="LM curve")
     ax.scatter(Y_eq, r_eq, color="black", s=60, label=f"Equilibrium: Y={Y_eq:.0f}, r={r_eq:.2f}")
     ax.set_xlabel("Income: Y")
