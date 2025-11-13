@@ -45,7 +45,7 @@ def find_equilibrium(alpha, C0, I0, b, G, M, k, h, P=1, T=0):
 
 
 if __name__ == "__main__":
-    Y_min, Y_max = 0, 5000
+    Y_min, Y_max = 0, 4000
     Y_IS, r_IS = IS_curve(alpha, C0, I0, b, G, Y_min, Y_max, T)
     Y_LM, r_LM = LM_curve(M, k, h, Y_min, Y_max, P)
     Y_eq, r_eq = find_equilibrium(alpha, C0, I0, b, G, M, k, h, P, T)
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     ax.set_title("IS–LM Model")
     ax.legend()
     ax.grid(True)
-    ax.set_xlim(left=0, right=5000)
+    ax.set_xlim(left=0, right=3500)
     ax.set_ylim(bottom=-1, top=20)
     st.pyplot(fig)
     st.markdown(f"**Equilibrium Income Y\*** = {Y_eq:.2f},  **Equilibrium Interest Rate r\*** = {r_eq:.3f}")
