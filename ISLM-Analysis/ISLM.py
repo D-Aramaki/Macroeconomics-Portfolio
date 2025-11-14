@@ -7,16 +7,21 @@ st.title("IS–LM Model")
 
 #入力UI
 st.sidebar.header("Parameter Settings")
+st.sidebar.subheader("IS曲線")
+st.sidebar.subheader("Y = αY + C₀ + I₀ - br + G")
 alpha = st.sidebar.slider("Marginal Propensity to Consume (α)", 0.1, 0.9, 0.7, 0.05)
 C0 = st.sidebar.slider("Autonomous Consumption (C₀)", 100, 1000, 500, 50)
 I0 = st.sidebar.slider("Autonomous Investment (I₀)", 100, 1000, 300, 50)
 b = st.sidebar.slider("Interest Sensitivity of Investment (b)", 10, 200, 50, 10)
 G = st.sidebar.slider("Government Expenditure (G)", 0, 600, 250, 50)
+T = st.sidebar.slider("Tax (T)", 0, 200, 0, 10)
+st.sidebar.subheader("LM曲線")
+st.sidebar.subheader("M / P = kY + hr")
 M = st.sidebar.slider("Nominal Money Supply (M)", 50, 600, 200, 25)
 k = st.sidebar.slider("Income Sensitivity of Money Demand (k)", 0.1, 1.0, 0.5, 0.05)
 h = st.sidebar.slider("Interest Sensitivity of Money Demand (h)", 1, 30, 10, 1)
 P = st.sidebar.slider("Price Level (P)", 0.5, 3.0, 1.0, 0.1)
-T = st.sidebar.slider("Tax (T)", 0, 200, 0, 10)
+
 
 # IS曲線
 def IS_curve(alpha, C0, I0, b, G, Y_min, Y_max, T=0):
